@@ -1,5 +1,5 @@
 /*
-  Merge sort algorith sorts an array in n*log(n) time.
+  Merge sort algorithm sorts an array in n*log(n) time.
 
   @author Evgeniy Kuznetsov
   @date 30.1.2015 1:47
@@ -11,6 +11,7 @@ function mergeSort(a){
 
   // Get split point for a given length of an array
   // @param {Integer} n Length of an array
+  // @return {Integer}
   var getSplitPoint = function(n){
     return Math.floor(n/2);
   };
