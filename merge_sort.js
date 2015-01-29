@@ -1,5 +1,5 @@
 /*
-  Merge sort algorithm sorts an array in n*log(n) time.
+  Merge sort algorithm sorts an array in O(n*log(n)) time.
 
   @author Evgeniy Kuznetsov
   @date 30.1.2015 1:47
