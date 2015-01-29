@@ -39,7 +39,7 @@ function mergeSort(a){
 
       if(!isNaN(f[i]) && !isNaN(s[j])){
         f[i]<s[j] ? chooseF() : chooseS();
-      }else if(f[i]){
+      }else if(!isNaN(f[i])){
         chooseF();
       }else{
         chooseS();
