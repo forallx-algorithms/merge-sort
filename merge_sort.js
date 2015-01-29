@@ -1,5 +1,5 @@
 /*
-  Merge sort algorithm sorts an array in O(n*log(n)) time.
+  Merge sort algorithm sorts an array for O(n*log(n)) time.
 
   @author Evgeniy Kuznetsov
   @date 30.1.2015 1:47
@@ -37,7 +37,7 @@ function mergeSort(a){
 
     for(var k=0;k<tlength;k++){
 
-      if(f[i] && s[j]){
+      if(!isNaN(f[i]) && !isNaN(s[j])){
         f[i]<s[j] ? chooseF() : chooseS();
       }else if(f[i]){
         chooseF();
@@ -91,3 +91,6 @@ console.log("Case 5:", mergeSort(test).toString()==[1,2,3].toString(), mergeSort
 
 test = [3,1,2];
 console.log("Case 6:", mergeSort(test).toString()==[1,2,3].toString(), mergeSort(test));
+
+test = [5,8,9,0,-1,3,2,4];
+console.log("Case 7:", mergeSort(test).toString()==[-1,0,2,3,4,5,8,9].toString(), mergeSort(test));
